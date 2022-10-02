@@ -6,7 +6,7 @@ import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 
 
 function home() {
-  return <div name="home" className ="h-screen w-full bg-gradient-to-b from-black via-black to gray-800">
+  return <div name="home" className ="h-screen w-full bg-gradient-to-b from-black via-black  to-gray-800">
 
 
     <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
@@ -33,7 +33,7 @@ function home() {
             </div>
         </div>
         <div><img src={HeroImage} 
-        alt ="my profile" className="rounded-2xl mx-auto w-2/3 md:w-full"/> </div>
+        alt ="my profile" className="rounded-[40rem] mx-auto w-[50%] md:w-full "/> </div>
     </div>
   </div>;
   
