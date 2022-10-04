@@ -6,39 +6,51 @@ import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
-const Portfolio = () => {
-  const portfolios = [
+const portfolios = [
     {
       id: 1,
       src: arrayDestruct,
-      href: 'https://bobbyhadz.com/blog/react-onclick-link'
+      href: 'https://space-travelers-hubs.netlify.app/',
+      code: 'https://github.com/rotshidzw/space-travelers-hub'
     },
     {
       id: 2,
       src: reactParallax,
-      href: 'https://bobbyhadz.com/blog/react-onclick-link'
+      href: 'https://hammaazarok.github.io/javascript-capstone/',
+      code: 'https://github.com/hammaazarok/javascript-capstone'
     },
     {
       id: 3,
       src: navbar,
-      href: 'https://bobbyhadz.com/blog/react-onclick-link'
+      href: 'https://metricss-webapp.netlify.app/',
+      code: 'https://github.com/rotshidzw/Metrics-webapp'
     },
     {
       id: 4,
       src: reactSmooth,
-      href: 'https://bobbyhadz.com/blog/react-onclick-link'
+      href: 'https://bookstorestorage.netlify.app/',
+      code: 'https://github.com/rotshidzw/bookstore'
     },
     {
       id: 5,
       src: installNode,
-      href: 'https://bobbyhadz.com/blog/react-onclick-link'
+      href: 'https://rotshidzw.github.io/capstone/',
+      code: 'https://github.com/rotshidzw/capstone'
     },
     {
       id: 6,
       src: reactWeather,
-      href: 'https://bobbyhadz.com/blog/react-onclick-link'
+      href: 'https://math-megician.netlify.app/',
+      code: 'https://github.com/rotshidzw/react-math'
     },
   ];
+const Portfolio = () => {
+  
+
+  function handlesubmit(href) {
+    window.open(href)
+  }
+
 
   return (
     <div
@@ -54,7 +66,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, href }) => (
+          {portfolios.map(({ id, src, href, code}) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -62,10 +74,10 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button href={href} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button onClick={()=>handlesubmit(href)} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Demo
                 </button>
-                <button href={href} onclick={id} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button onClick={()=>handlesubmit(code)} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
                 </button>
               </div>
