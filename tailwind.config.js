@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       logo:  ['Great Vibes'],
+      mylogo:'Bungee Spice',
     }
   },
   plugins: [],
