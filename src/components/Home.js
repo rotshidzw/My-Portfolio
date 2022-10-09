@@ -17,7 +17,7 @@ function home() {
 
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-6 md:flex-row">
         <div className="flex flex-col justify-center h-full ">
-          <h2 className="text-4xl sm:text-7xl font-boldflex font-semibold text-purple-600">
+          <h2 className="text-4xl sm:text-8xl font-boldflex font-semibold text-purple-600">
             <span className="animate-waving-hand">👋🏻</span>
             I am a Full-stack Developer
 
