@@ -15,7 +15,7 @@ function home() {
   return (
     <div name="home" className="h-screen w-full bg-gradient-to-b from-black via-black  to-gray-800">
 
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-6 md:flex-row">
+      <div className="max-w-screen-lg pt-[50px] mx-auto flex flex-col items-center justify-center  px-6 md:flex-row">
         <div className="flex flex-col justify-center h-full ">
           <h2 className="text-4xl sm:text-8xl font-boldflex font-semibold text-purple-600">
             <span className="animate-waving-hand">👋🏻</span>
